@@ -3,6 +3,7 @@
 import { hydrateRoot } from "react-dom/client";
 import { StartClient } from "@tanstack/react-start";
 import { createRouter } from "./router";
+import "./globals.css";
 
 const router = createRouter();
 
