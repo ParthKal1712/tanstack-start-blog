@@ -2,6 +2,8 @@
 import * as fs from "node:fs";
 import { createFileRoute, useRouter } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
+import { Button } from "@/components/ui/button";
+import { H1, H2 } from "@/components/ui/typography";
 
 const filePath = "count.txt";
 
@@ -33,18 +35,5 @@ function Home() {
   const router = useRouter();
   const state = Route.useLoaderData();
 
-  return (
-    <div className="bg-slate-600 w-100 h-100">
-      <button
-        type="button"
-        onClick={() => {
-          updateCount({ data: 1 }).then(() => {
-            router.invalidate();
-          });
-        }}
-      >
-        Add 1 to {state}?
-      </button>
-    </div>
-  );
+  return <div></div>;
 }
